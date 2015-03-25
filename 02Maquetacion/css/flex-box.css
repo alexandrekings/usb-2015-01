@@ -1,0 +1,70 @@
+body, html
+{
+	background: #1C5F81;
+	color: #EC673A;
+	font-size: 48px;
+	text-align: center;
+}
+
+/* selector universal */
+*
+{
+	box-sizing: border-box;
+}
+
+.padre
+{
+	background: yellow;
+	display: inline-flex; /* Caja Flexible en línea */
+	display: flex; /* Caja Flexible en bloque */
+	/* Por defecto los elementos flexibles encajan en una línea. */
+	flex-wrap: nowrap;
+	flex-wrap: wrap;
+	flex-wrap: wrap-reverse;
+	/* Establece el eje principal. */
+	flex-direction: row-reverse;
+	flex-direction: column-reverse;
+	flex-direction: column;
+	flex-direction: row;
+	/* Es el shorthand de flex-direction y flex-wrap */
+	flex-flow: row wrap;
+	/* Define cómo los elementos se disponen a lo largo del eje principal */
+	justify-content: flex-start;
+	justify-content: flex-end;
+	justify-content: space-between;
+	justify-content: space-around;
+	justify-content: center;
+	
+	/*Define cómo los elementos se disponen a lo largo del eje secundario */
+	align-content: flex-start;
+	align-content: flex-end;
+	align-content: space-between;
+	align-content: space-around;
+	align-content: center; 
+	margin: auto;
+	width: 90%;
+	height: 600px;
+}
+
+.hijos
+{
+	background: #292623;
+	border: thin solid white;
+	height: 180px;
+	/* width: 50%; */
+	/* Define qué cantidad de espacio disponible debe crecer en el interior de la caja flexible */
+	flex-grow: 1;
+	/* Define qué cantidad de espacio disponible debe reducir en el interior de la caja flexible */
+	flex-shrink: 0;
+	/* Define el tamaño por defecto de un elemento antes de que se distribuya el espacio restante. */
+	flex-basis: 20%;
+	/* Es el shorthand de flex-grow flex-shrink y flex-basis */
+	flex: 1 0 20%;
+	/* Controla el orden en el que aparecen los elementos en la caja flexible */
+	order: 1;
+}
+
+.hijos:nth-child(odd)
+{
+	order:0;
+}

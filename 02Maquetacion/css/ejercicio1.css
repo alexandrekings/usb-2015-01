@@ -1,0 +1,23 @@
+body, html
+{
+	background: #292623;
+	color: #EC673A;
+	font-size: 32px;
+	text-align: center;
+}
+
+.padre
+{
+	background: yellow;
+	margin: .5rem auto;
+	width: 90%;
+}
+
+.hijo
+{
+	background: #1C5F81;
+	display: inline-block;
+	min-height: 200px;
+	vertical-align: top;
+	width: 30%;
+}

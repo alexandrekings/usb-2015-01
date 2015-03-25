@@ -1,0 +1,28 @@
+html 
+{
+	color: green;
+	font-size: 16px;
+}
+
+/* selector universal */
+*
+{
+	margin: 0;
+}
+
+div
+{
+	background: yellow;
+	margin: 1em 2em;
+	padding: 1em;
+}
+
+h1
+{
+	background: pink;
+}
+
+span
+{
+	background: red;
+}

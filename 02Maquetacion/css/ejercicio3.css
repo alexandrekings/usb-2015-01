@@ -1,0 +1,26 @@
+body, html
+{
+	background: #1C5F81;
+	color: #EC673A;
+	font-size: 48px;
+	text-align: center;
+}
+
+.fila
+{
+	/* background: yellow; */
+	font-size: 0;
+	margin: .5rem auto;
+	width: 90%;
+}
+
+.oculto, .visible
+{
+	background: #292623;
+	display: inline-block;
+	min-height: 180px;
+	vertical-align: top;
+	width: 30%;
+}
+
+.oculto { background: transparent; }
